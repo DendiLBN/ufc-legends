@@ -8,8 +8,8 @@ export const Hero = () => {
     <div className="flex flex-col w-full items-center justify-center border-b bg-black text-white relative overflow-hidden min-h-[100vh]">
       <motion.h1
         className="text-3xl sm:text-4xl font-bold text-center z-10 px-4"
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
+        initial={{ y: 0, opacity: 0 }}
+        animate={{ y: 100, opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
         <p className="flex flex-col w-full items-center justify-center  bg-black elative overflow-hidden text-white">
@@ -22,10 +22,11 @@ export const Hero = () => {
         alt="UFC background"
         objectFit="cover"
         priority
-        width={1920}
-        height={1080}
+        layout="responsive"
+        width={1200}
+        height={920}
         style={{
-          width: "auto",
+          width: "100%",
           height: "auto",
         }}
       />

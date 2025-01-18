@@ -58,7 +58,7 @@ export const Header = () => {
           </Link>
           <Link
             href="/getstarted"
-            className="px-2 py-2 bg-gray-600 text-white rounded-full hover:bg-red-700 transition-colors"
+            className="px-2 py-2 bg-gray-600 text-white rounded-full hover:bg-red-700 transition-transform hover:shadow-[0_0_15px_5px_rgba(255,0,0,0.6)] hover:border-red-700"
           >
             Start Collecting
           </Link>
