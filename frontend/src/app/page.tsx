@@ -1,17 +1,24 @@
-import { Hero } from "@/components/landing-page/hero/hero";
-import { InfoCards } from "@/components/landing-page/info-cards/info-cards";
-import { Leaderboard } from "@/components/landing-page/ladder/ladder";
-
-import { OpeningCards } from "@/components/landing-page/opening-card/opening-card";
+import HeroSection from "@/components/HeroSection";
+import Navbar from "@/components/Navbar";
+import FeaturesSection from "@/components/FeaturesSection";
+import GameplayFeatures from "@/components/GameplayFeatures";
+import BattlePassSection from "@/components/BattlePassSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="relative">
-      <Hero />
-      <OpeningCards />
-      <Leaderboard />
-      <InfoCards />
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 lg:pt-20 sm:pt-32 pb-12 sm:pb-20"></div>
+    <div className="relative bg-zinc-900 text-white">
+      <Navbar />
+      <HeroSection />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <FeaturesSection />
+        <GameplayFeatures />
+        <BattlePassSection />
+        <TestimonialsSection />
+        <Footer />
+      </div>
     </div>
   );
 }
