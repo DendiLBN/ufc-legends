@@ -1,0 +1,1 @@
+UFC Collection Card is a web application that allows users to collect, trade, and manage UFC fighter cards. The project is built using Next.js on the frontend and NestJS on the backend, providing a modern and scalable solution for managing digital UFC cards.
